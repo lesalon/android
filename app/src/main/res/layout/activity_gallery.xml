@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lesalon.gallery.GalleryActivity">
+
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:shrinkColumns="*"  android:stretchColumns="*"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tableLayout">
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/ImageView_1"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+            <ImageView
+                android:id="@+id/ImageView_2"
+                android:layout_marginRight="20dp"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+            <ImageView
+                android:id="@+id/ImageView_3"
+                android:padding="18dip"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/book_tb"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ImageView_4"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+            <ImageView
+                android:id="@+id/ImageView_5"
+                android:layout_marginRight="20dp"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+            <ImageView
+                android:id="@+id/ImageView_6"
+                android:padding="18dip"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/book_tb"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/ImageView_7"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+            <ImageView
+                android:id="@+id/ImageView_8"
+                android:layout_marginRight="20dp"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+            <ImageView
+                android:id="@+id/ImageView_9"
+                android:layout_marginRight="10dp"
+                android:padding="18dip"
+                android:src="@mipmap/book_tb"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <EditText
+                android:id="@+id/Code"
+                android:text="ENTER CODE"
+                android:textSize="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:inputType="text" />
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Anirudh Dinesh"
+        android:textSize="35dp"
+        android:id="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tableLayout"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/textView"
+        android:src="@mipmap/profile_picture"/>
+
+</RelativeLayout>
+
+
+
+
+
