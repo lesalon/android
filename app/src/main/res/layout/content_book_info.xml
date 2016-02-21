@@ -10,48 +10,110 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.lesalon.BookInfo"
+    android:background="#C4DFFF"
     tools:showIn="@layout/activity_book_info">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/chat_logo"
+        android:id="@+id/imageView2"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/chat"
+        android:layout_alignBottom="@+id/chat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"  />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Chat"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
         android:id="@+id/chat"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
-        android:clickable="true" />
+        android:clickable="true"
+        android:elegantTextHeight="false"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center_horizontal" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/review_logo"
+        android:id="@+id/imageView3"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/reviews"
+        android:layout_alignBottom="@+id/reviews"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
         android:text="Reviews"
         android:id="@+id/reviews"
+        android:textColor="#ffffff"
         android:layout_below="@+id/chat"
         android:layout_centerHorizontal="true"
+
         android:layout_marginTop="57dp"
-        android:clickable="true" />
+        android:clickable="true"
+        android:foregroundGravity="center" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/author_logo"
+        android:id="@+id/imageView4"
 
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/authors_content"
+        android:layout_alignBottom="@+id/authors_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:foregroundGravity="right" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Authors Content"
+        android:text="Authors Space"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
         android:id="@+id/authors_content"
+        android:clickable="true"
+        android:foregroundGravity="right"
+        android:gravity="right"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:clickable="true" />
+        android:layout_alignLeft="@+id/reviews"
+        android:layout_alignStart="@+id/reviews" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fanfic_logo"
+        android:id="@+id/imageView5"
 
+
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/fan_club"
+        android:layout_alignBottom="@+id/fan_club"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Fan Club"
+        android:text="Fan Fiction"
         android:id="@+id/fan_club"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="74dp"
+        android:clickable="true"
         android:layout_below="@+id/authors_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp"
-        android:clickable="true" />
+        android:layout_alignLeft="@+id/authors_content"
+        android:layout_alignStart="@+id/authors_content" />
 </RelativeLayout>
