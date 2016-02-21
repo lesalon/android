@@ -24,7 +24,7 @@
         android:layout_height="400dp"
         android:scrollbars="none"
 
-        android:layout_alignTop="@+id/textView"
+        android:layout_alignTop="@+id/username"
         android:layout_alignLeft="@+id/imageView2"
         android:layout_alignStart="@+id/imageView2">
 
@@ -33,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Anirudh Dinesh"
-        android:textSize="35dp"
-        android:id="@+id/textView"
+        android:text="User"
+        android:textSize="20dp"
+        android:id="@+id/username"
         android:layout_marginTop="20dp"
         android:layout_alignRight="@+id/tableLayout"
         android:layout_alignEnd="@+id/tableLayout"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignBottom="@+id/textView"
+        android:layout_alignBottom="@+id/username"
         android:src="@mipmap/profile_picture"
         android:scaleType="center" />
 
@@ -70,9 +70,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Anirudh's Badges: "
+                android:text="Badges: "
                 android:textSize="20dp"
-                android:id="@+id/textView2"
+                android:id="@+id/badges"
                 android:layout_above="@+id/tableLayout"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
