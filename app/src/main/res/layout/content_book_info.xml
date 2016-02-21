@@ -59,7 +59,7 @@
         android:textColor="#ffffff"
         android:layout_below="@+id/chat"
         android:layout_centerHorizontal="true"
-
+        
         android:layout_marginTop="57dp"
         android:clickable="true"
         android:foregroundGravity="center" />
