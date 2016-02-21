@@ -26,6 +26,7 @@ public class GalleryActivity extends AppCompatActivity implements
     private GoogleSignInResult result;
     private EditText mEnterChat;
     private Button mChatUser;
+    private TextView mStatusTextView;
 
 
     @Override
@@ -44,6 +45,7 @@ public class GalleryActivity extends AppCompatActivity implements
         mEnterChat = (EditText) findViewById(R.id.enterChat);
         mChatUser = (Button) findViewById(R.id.chat_user);
         mChatUser.setOnClickListener(this);
+        mStatusTextView = (TextView) findViewById(R.id.textView);
 
     }
 
@@ -62,6 +64,7 @@ public class GalleryActivity extends AppCompatActivity implements
                 // Signed in successfully, show authenticated UI.
                 GoogleSignInAccount acct = result.getSignInAccount();
                 String name = acct.getDisplayName();
+                mStatusTextView.setText(name);
             }
             //handleSignInResult(result);
         }
