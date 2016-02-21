@@ -5,15 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-<<<<<<< Updated upstream
-<<<<<<< HEAD
         <option name="gradleJvm" value="1.7" />
-=======
-        <option name="gradleJvm" value="1.8" />
->>>>>>> cf7c393f7ac7f576bfb28f3b3c2e67ca3a847b4d
-=======
-        <option name="gradleJvm" value="1.7" />
->>>>>>> Stashed changes
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
