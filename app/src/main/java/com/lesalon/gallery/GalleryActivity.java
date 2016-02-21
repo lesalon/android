@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.AbsListView;
+import android.widget.Gallery;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
@@ -46,10 +47,6 @@ public class GalleryActivity extends AppCompatActivity implements
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-        mStatusTextView = (TextView) findViewById(R.id.username);
-        badges = (TextView) findViewById(R.id.badges);
-
-
     }
 
     @Override
@@ -69,7 +66,7 @@ public class GalleryActivity extends AppCompatActivity implements
                 String name = acct.getDisplayName();
                 String fname = name.split(" ")[0];
                 mStatusTextView.setText(acct.getDisplayName());
-                badges.setText(fname+"'s Badges");
+               badges.setText(fname+"'s Badges");
             }
             //handleSignInResult(result);
         }
