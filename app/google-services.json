@@ -1,57 +1,13 @@
 {
   "project_info": {
-    "project_id": "le-salon",
-    "project_number": "976977731528",
-    "name": "Le Salon"
+    "project_id": "lesalon-dba54",
+    "project_number": "190097877816",
+    "name": "LeSalon"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:976977731528:android:27d689d63f1b7a06",
-        "client_id": "android:com.google.samples.quickstart.signin",
-        "client_type": 1,
-        "android_client_info": {
-          "package_name": "com.google.samples.quickstart.signin"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "976977731528-4dad6vbl50q4evhh7te2hbaerddcsvb6.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.samples.quickstart.signin",
-            "certificate_hash": "183F50E8AD31B7A78298FB3B509958D862BA6921"
-          }
-        },
-        {
-          "client_id": "976977731528-35sotcmk6co2sej30drrps3en3kfqkv2.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "cloud_messaging_service": {
-          "status": 1,
-          "apns_config": []
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "google_signin_service": {
-          "status": 2
-        },
-        "ads_service": {
-          "status": 1
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:976977731528:android:289a667b036778f7",
+        "mobilesdk_app_id": "1:190097877816:android:289a667b036778f7",
         "client_id": "android:com.lesalon",
         "client_type": 1,
         "android_client_info": {
@@ -60,7 +16,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "976977731528-35sotcmk6co2sej30drrps3en3kfqkv2.apps.googleusercontent.com",
+          "client_id": "190097877816-6rsod6r5pd7d4gb7llg6kklp801t7t2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lesalon",
+            "certificate_hash": "19E6994D99AB05A737DA8A2AB598B186B65EFD34"
+          }
+        },
+        {
+          "client_id": "190097877816-q8gvd3ok3dhbhmmu77uerf5oigh2p6hl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -70,7 +34,7 @@
           "status": 1
         },
         "cloud_messaging_service": {
-          "status": 1,
+          "status": 2,
           "apns_config": []
         },
         "appinvite_service": {
@@ -78,7 +42,7 @@
           "other_platform_oauth_client": []
         },
         "google_signin_service": {
-          "status": 1
+          "status": 2
         },
         "ads_service": {
           "status": 1
