@@ -1,17 +1,12 @@
 package com.lesalon.gallery;
 
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.AbsListView;
-import android.widget.Gallery;
-import android.widget.GridLayout;
-import android.widget.ImageView;
-import android.widget.QuickContactBadge;
-import android.widget.ScrollView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.gms.auth.api.Auth;
@@ -21,16 +16,17 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
-import com.google.android.gms.common.api.ResultCallback;
 import com.lesalon.R;
+import com.lesalon.chat.ChatActivity;
 
 public class GalleryActivity extends AppCompatActivity implements
-        GoogleApiClient.OnConnectionFailedListener{
+        GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
 
     private GoogleApiClient mGoogleApiClient;
     private GoogleSignInResult result;
+    private EditText mEnterChat;
+    private Button mChatUser;
     private TextView mStatusTextView;
-    private TextView badges;
 
 
     @Override
@@ -46,6 +42,10 @@ public class GalleryActivity extends AppCompatActivity implements
                 .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
+        mEnterChat = (EditText) findViewById(R.id.enterChat);
+        mChatUser = (Button) findViewById(R.id.chat_user);
+        mChatUser.setOnClickListener(this);
+        mStatusTextView = (TextView) findViewById(R.id.textView);
 
     }
 
@@ -64,9 +64,7 @@ public class GalleryActivity extends AppCompatActivity implements
                 // Signed in successfully, show authenticated UI.
                 GoogleSignInAccount acct = result.getSignInAccount();
                 String name = acct.getDisplayName();
-                String fname = name.split(" ")[0];
-                mStatusTextView.setText(acct.getDisplayName());
-               badges.setText(fname+"'s Badges");
+                mStatusTextView.setText(name);
             }
             //handleSignInResult(result);
         }
@@ -74,5 +72,20 @@ public class GalleryActivity extends AppCompatActivity implements
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
         Log.d("Gallery Activity", "onConnectionFailed:" + connectionResult);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.chat_user:
+                String chatUser = mEnterChat.getText().toString();
+                if(chatUser.length() > 0) {
+                    GoogleSignInAccount acct = result.getSignInAccount();
+                    Intent chatIntent = ChatActivity.getIntent(this,
+                            acct.getEmail(), chatUser, acct.getDisplayName());
+                    startActivity(chatIntent);
+                }
+                break;
+        }
     }
 }

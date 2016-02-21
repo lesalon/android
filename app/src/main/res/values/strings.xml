@@ -47,4 +47,16 @@
     <string name="server_client_id">976977731528-1scbek96orqntdpauavoiemv7rbdcvrm.apps.googleusercontent.com</string>
     <string name="title_activity_book_info">Book Information</string>
     <string name="sign_in">Sign In</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="enter_new_channel">Enter new channel:</string>
+    <string name="send_message">Send Message</string>
+    <string name="action_gcm_register">GCM Register</string>
+    <string name="action_gcm_unregister">GCM Unregister</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="title_activity_settings">Settings</string>
+
+       <!-- Example settings for Notifications -->
+
+    <string name="chat_user">Chat user</string>
+
 </resources>
