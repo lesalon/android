@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="genre">
+        <item>Technology</item>
+        <item>Science Fiction</item>
+        <item>Comics</item>
+        <item>Historical Fiction</item>
+        <item>Science Fiction</item>
+        <item>Fantasy</item>
+        <item>Drama</item>
+        <item>Poetry</item>
+        <item>Science Fiction</item>
+        <item>Science Fiction</item>
+        <item>Science Fiction</item>
+        <item>Fables</item>
+        <item>Mythology</item>
+        <item>Technology</item>
+        <item>Science Fiction</item>
+        <item>Science Fiction</item>
+        <item>Science Fiction</item>
+        <item>Fables</item>
+        <item>Mythology</item>
+    </array>
+
+    <integer-array name="images">
+        <item>@mipmap/tech</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/comics</item>
+        <item>@mipmap/histfic</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/fantasy</item>
+        <item>@mipmap/drama</item>
+        <item>@mipmap/poetry</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/fables</item>
+        <item>@mipmap/mythology</item>
+        <item>@mipmap/tech</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/scifi</item>
+        <item>@mipmap/fables</item>
+        <item>@mipmap/mythology</item>
+    </integer-array>
+</resources>

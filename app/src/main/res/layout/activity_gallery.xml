@@ -5,258 +5,49 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/profile_picture" />
 
-    <HorizontalScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:textSize="25sp" />
 
-        android:layout_marginTop="5dp">
+    <GridView
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/imgGrid"
+        android:numColumns="auto_fit"
+        android:padding="2dp"
+        android:stretchMode="columnWidth"
+        android:scrollbars="horizontal"
+        android:gravity="center"/>
 
-        <TableLayout
-            android:id="@+id/tableLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:orientation="vertical"
-            android:stretchColumns="*"
-            android:weightSum="4">
+    <EditText
+        android:id="@+id/enterChat"
+        android:hint="ENTER CHAT ID"
+        android:layout_below="@id/imgGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
-            <TableRow
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_gravity="center_vertical"
-                    android:src="@mipmap/profile_picture" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="Anirudh Dinesh"
-
-                    android:textSize="35dp" />
-
-
-            </TableRow>
-
-
-            <TableRow
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-
-                <TextView
-                    android:id="@+id/gen_scifi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_comics"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/comics"
-                    android:text="Comics"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_histfic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|right"
-                    android:drawableTop="@mipmap/histfic"
-                    android:text="Historical Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_fantasy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/fantasy"
-                    android:elegantTextHeight="false"
-                    android:enabled="false"
-                    android:text="Fantasy"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_drama"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|right"
-                    android:drawableTop="@mipmap/drama"
-                    android:text="Drama"
-                    android:textColor="#000000" />
-
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:id="@+id/gen_poetry"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/poetry"
-                    android:text="Poetry"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi1test3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|right"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi1test4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_fables"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/fables"
-                    android:text="Fables"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_mythology"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|right"
-                    android:drawableTop="@mipmap/mythology"
-                    android:text="Mythology"
-                    android:textColor="#000000" />
-
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:id="@+id/gen_tech"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/tech"
-                    android:text="Technology"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi1test5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|right"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_scifi1test6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/scifi"
-                    android:text="Science Fiction"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_fables1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableTop="@mipmap/fables"
-                    android:text="Fables"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/gen_mythology1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|right"
-                    android:drawableTop="@mipmap/mythology"
-                    android:text="Mythology"
-                    android:textColor="#000000" />
-
-
-            </TableRow>
-            <TableRow
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:gravity="center_horizontal"
-                android:baselineAligned="false">
-                <EditText
-                    android:id="@+id/enterChat"
-                    android:hint="ENTER CHAT ID"
-                    android:textSize="20dp"
-                    android:paddingTop="20dp"
-                    android:inputType="text"
-                    android:textColor="#FFFFFF"/>
-                <Button
-                    android:id="@+id/chat_user"
-                    android:text="@string/chat_user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            </TableRow>
-
-        </TableLayout>
-
-    </HorizontalScrollView>
+    <Button
+        android:id="@+id/chat_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgGrid"
+        android:layout_toRightOf="@id/enterChat"
+        android:text="@string/chat_user" />
 </RelativeLayout>
